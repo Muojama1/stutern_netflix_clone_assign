@@ -1,0 +1,241 @@
+/* General stylings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background: rgb(46, 45, 45);
+}
+
+/* For the nav bar area */
+.nav {
+  background-image: url("netflix background.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95vh;
+  box-shadow: inset 150px 400px 250px 300px rgba(0, 0, 0, 0.767);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+nav button {
+  border: none;
+  padding: 5px 18px;
+  background-color: red;
+  border-radius: 5px;
+}
+nav img {
+  width: 10%;
+  object-fit: contain;
+}
+
+/* The word on the nav bar */
+.CTA {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  margin: auto;
+  width: 40%;
+  align-content: center;
+}
+.CTA h1 {
+  padding: 0px 4%;
+  font-size: 50px;
+}
+.CTA p {
+  line-height: 35px;
+}
+
+/* For the input and button on the nav bar */
+.CTA input,
+.form input {
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+}
+.CTA input {
+  width: 100%;
+  color: white;
+  background-color: white;
+}
+.CTA input::placeholder,
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.521);
+}
+.CTA button {
+  margin: 0;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.form {
+  display: flex;
+}
+
+/* FOR THE FEATURES SECTION */
+.options {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+.content img {
+  width: 120%;
+  display: grid;
+  align-items: center;
+}
+.content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  gap: 20%;
+  place-items: center;
+  align-content: center;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.text p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.text h1 {
+  font-size: 37px;
+}
+
+/* FOR THE TV SECTION OF THE FEATURES SECTION */
+.imbed {
+  position: relative;
+}
+.imbed img {
+  position: relative;
+  width: 105%;
+}
+.imbed video {
+  position: absolute;
+  width: 75%;
+  top: 22.1%;
+  left: 14%;
+}
+
+.option,
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+/* FOR THE FAQ SECTION */
+.faq {
+  width: 90%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 50px 0px;
+}
+.form input {
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: rgba(105, 100, 100, 0.493);
+}
+.form input:-ms-input-placeholder {
+  color: rgb(218, 213, 213);
+}
+.form {
+  margin-top: 5px;
+}
+.form button {
+  width: 30%;
+  /* padding: 12px 20px; */
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.questions > div {
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  text-align: left;
+  background-color: rgba(105, 100, 100, 0.493);
+}
+.questions {
+  margin: 40px 0px;
+}
+.questions > div:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.questions > div:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.questions > div:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.questions > div:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.questions > div:nth-child(6) {
+  transition-delay: 1s;
+}
+
+/* FOR THE FOOTER SECTION */
+.foot {
+  list-style: none;
+  margin: auto;
+  padding: 60px 0px 30px 0px;
+  color: rgb(83, 79, 79);
+  font-size: 15px;
+  width: 80%;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 60%;
+}
+
+.links div {
+  padding: 10px;
+  color: rgba(105, 100, 100, 0.493);
+  font-size: 14px;
+  width: 25%;
+}
+.foot p {
+  color: rgba(105, 100, 100, 0.493);
+  font-size: 14px;
+}
+.links {
+  padding: 30px 0px;
+}
+
+/* FOR THE SCROLL ANIMATION */
+
+
+/* FOR MEDIA RESPONSIVENESS */
+@media screen and (width: 375px) {
+  .content {
+    display: grid;
+  }
+}
